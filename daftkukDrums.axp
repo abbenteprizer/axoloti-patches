@@ -1,0 +1,530 @@
+<patch-1.0 appVersion="1.0.12">
+   <comment type="patch/comment" x="42" y="28" text="check settings for MIDI channel!"/>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1" x="40" y="60">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="60"/>
+      </attribs>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashplay_1" x="180" y="60">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808bd"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1" x="340" y="60">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="tb/midi/utils/midithru" uuid="b3868bd5-625c-4482-9948-a34e59fe2a21" name="midithru_1" x="490" y="70">
+      <params/>
+      <attribs>
+         <combo attributeName="input" selection="omni"/>
+         <combo attributeName="output" selection="din"/>
+         <combo attributeName="led" selection="on"/>
+      </attribs>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1_" x="40" y="160">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="62"/>
+      </attribs>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashplay_2" x="180" y="160">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808snare"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1_" x="340" y="160">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 7" uuid="1ddcf110bc38d78eddbc6d343aa8bf8a0953af76" name="mix_1" x="490" y="196">
+      <params>
+         <frac32.u.map name="gain1" value="64.0"/>
+         <frac32.u.map name="gain2" value="64.0"/>
+         <frac32.u.map name="gain3" value="29.5"/>
+         <frac32.u.map name="gain4" value="32.5"/>
+         <frac32.u.map name="gain5" value="29.5"/>
+         <frac32.u.map name="gain6" value="31.0"/>
+         <frac32.u.map name="gain7" value="31.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1__" x="40" y="260">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="64"/>
+      </attribs>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashplay_3" x="180" y="260">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808hatclose"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1__" x="340" y="260">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1___" x="40" y="360">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="65"/>
+      </attribs>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashplay_4" x="180" y="360">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808hatopen"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1___" x="340" y="360">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1____" x="40" y="460">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="66"/>
+      </attribs>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashplay_5" x="180" y="460">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808hitom"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1____" x="340" y="460">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1_____" x="40" y="560">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="68"/>
+      </attribs>
+   </obj>
+   <obj type="wave/flashplay" uuid="595422aa-8767-45a8-ae08-bd8ac0247c61" name="flashplay_6" x="182" y="560">
+      <params/>
+      <attribs>
+         <combo attributeName="sample" selection="808midtom"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1_____" x="340" y="560">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_2" x="182" y="658">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEC3 Bassdrums Clubby 001.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1______" x="406" y="658">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1______" x="40" y="660">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="70"/>
+      </attribs>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1_______" x="42" y="770">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="72"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_3" x="182" y="770">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEC3 Bassdrums Clubby 001.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_2" x="420" y="784">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1________" x="42" y="868">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="74"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_4" x="182" y="868">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEC3 Snares 038.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_12" x="420" y="882">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 7" uuid="1ddcf110bc38d78eddbc6d343aa8bf8a0953af76" name="mix_2" x="532" y="910">
+      <params>
+         <frac32.u.map name="gain1" value="64.0"/>
+         <frac32.u.map name="gain2" value="64.0"/>
+         <frac32.u.map name="gain3" value="29.5"/>
+         <frac32.u.map name="gain4" value="32.5"/>
+         <frac32.u.map name="gain5" value="29.5"/>
+         <frac32.u.map name="gain6" value="31.0"/>
+         <frac32.u.map name="gain7" value="31.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 7" uuid="1ddcf110bc38d78eddbc6d343aa8bf8a0953af76" name="mix_3" x="672" y="910">
+      <params>
+         <frac32.u.map name="gain1" value="64.0"/>
+         <frac32.u.map name="gain2" value="64.0"/>
+         <frac32.u.map name="gain3" value="29.5"/>
+         <frac32.u.map name="gain4" value="32.5"/>
+         <frac32.u.map name="gain5" value="29.5"/>
+         <frac32.u.map name="gain6" value="31.0"/>
+         <frac32.u.map name="gain7" value="31.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="dac_1______" x="784" y="910">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1_________" x="42" y="966">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="76"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_5" x="182" y="966">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEH2 Claps - 002.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1_2" x="420" y="980">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1__________" x="42" y="1064">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="77"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_6" x="182" y="1064">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEH2 Claps - 002.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1__2" x="420" y="1078">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1___________" x="42" y="1162">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="78"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_7" x="182" y="1162">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEH2 Claps - 002.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1___2" x="420" y="1176">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1____________" x="42" y="1260">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="80"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_8" x="182" y="1260">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEH2 Claps - 002.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1____2" x="420" y="1274">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1_____________" x="42" y="1358">
+      <params/>
+      <attribs>
+         <spinner attributeName="note" value="82"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_9" x="182" y="1358">
+      <params/>
+      <attribs>
+         <file attributeName="fn" file="DaftKukSamples\VEH2 Claps - 002.wav"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1_____2" x="420" y="1372">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="keybnote1" outlet="gate"/>
+         <dest obj="flashplay_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keybnote1" outlet="velocity"/>
+         <dest obj="vca_1" inlet="v"/>
+      </net>
+      <net>
+         <source obj="flashplay_1" outlet="out"/>
+         <dest obj="vca_1" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keybnote1_" outlet="gate"/>
+         <dest obj="flashplay_2" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keybnote1_" outlet="velocity"/>
+         <dest obj="vca_1_" inlet="v"/>
+      </net>
+      <net>
+         <source obj="flashplay_2" outlet="out"/>
+         <dest obj="vca_1_" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keybnote1__" outlet="gate"/>
+         <dest obj="flashplay_3" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keybnote1__" outlet="velocity"/>
+         <dest obj="vca_1__" inlet="v"/>
+      </net>
+      <net>
+         <source obj="flashplay_3" outlet="out"/>
+         <dest obj="vca_1__" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keybnote1___" outlet="gate"/>
+         <dest obj="flashplay_4" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keybnote1___" outlet="velocity"/>
+         <dest obj="vca_1___" inlet="v"/>
+      </net>
+      <net>
+         <source obj="flashplay_4" outlet="out"/>
+         <dest obj="vca_1___" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keybnote1____" outlet="gate"/>
+         <dest obj="flashplay_5" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keybnote1____" outlet="velocity"/>
+         <dest obj="vca_1____" inlet="v"/>
+      </net>
+      <net>
+         <source obj="flashplay_5" outlet="out"/>
+         <dest obj="vca_1____" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keybnote1_____" outlet="gate"/>
+         <dest obj="flashplay_6" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="keybnote1_____" outlet="velocity"/>
+         <dest obj="vca_1_____" inlet="v"/>
+      </net>
+      <net>
+         <source obj="flashplay_6" outlet="out"/>
+         <dest obj="vca_1_____" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keybnote1______" outlet="velocity"/>
+         <dest obj="vca_1______" inlet="v"/>
+      </net>
+      <net>
+         <source obj="vca_1" outlet="o"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="vca_1_" outlet="o"/>
+         <dest obj="mix_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="vca_1__" outlet="o"/>
+         <dest obj="mix_1" inlet="in3"/>
+      </net>
+      <net>
+         <source obj="vca_1___" outlet="o"/>
+         <dest obj="mix_1" inlet="in4"/>
+      </net>
+      <net>
+         <source obj="vca_1____" outlet="o"/>
+         <dest obj="mix_1" inlet="in5"/>
+      </net>
+      <net>
+         <source obj="vca_1_____" outlet="o"/>
+         <dest obj="mix_1" inlet="in6"/>
+      </net>
+      <net>
+         <source obj="keybnote1_______" outlet="velocity"/>
+         <dest obj="vca_2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="keybnote1________" outlet="velocity"/>
+         <dest obj="vca_12" inlet="v"/>
+      </net>
+      <net>
+         <source obj="keybnote1_________" outlet="velocity"/>
+         <dest obj="vca_1_2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="keybnote1__________" outlet="velocity"/>
+         <dest obj="vca_1__2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="keybnote1___________" outlet="velocity"/>
+         <dest obj="vca_1___2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="keybnote1____________" outlet="velocity"/>
+         <dest obj="vca_1____2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="keybnote1_____________" outlet="velocity"/>
+         <dest obj="vca_1_____2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="vca_2" outlet="o"/>
+         <dest obj="mix_2" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="vca_12" outlet="o"/>
+         <dest obj="mix_2" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="vca_1_2" outlet="o"/>
+         <dest obj="mix_2" inlet="in3"/>
+      </net>
+      <net>
+         <source obj="vca_1__2" outlet="o"/>
+         <dest obj="mix_2" inlet="in4"/>
+      </net>
+      <net>
+         <source obj="vca_1___2" outlet="o"/>
+         <dest obj="mix_2" inlet="in5"/>
+      </net>
+      <net>
+         <source obj="vca_1____2" outlet="o"/>
+         <dest obj="mix_2" inlet="in6"/>
+      </net>
+      <net>
+         <source obj="vca_1_____2" outlet="o"/>
+         <dest obj="mix_2" inlet="in7"/>
+      </net>
+      <net>
+         <source obj="mix_3" outlet="out"/>
+         <dest obj="dac_1______" inlet="left"/>
+         <dest obj="dac_1______" inlet="right"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="mix_3" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="mix_2" outlet="out"/>
+         <dest obj="mix_3" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="play_3" outlet="out"/>
+         <dest obj="vca_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="play_2" outlet="out"/>
+         <dest obj="vca_1______" inlet="a"/>
+      </net>
+      <net>
+         <source obj="keybnote1______" outlet="gate"/>
+         <dest obj="play_2" inlet="start"/>
+      </net>
+      <net>
+         <source obj="keybnote1_______" outlet="gate"/>
+         <dest obj="play_3" inlet="start"/>
+      </net>
+      <net>
+         <source obj="keybnote1________" outlet="gate"/>
+         <dest obj="play_4" inlet="start"/>
+      </net>
+      <net>
+         <source obj="keybnote1_________" outlet="gate"/>
+         <dest obj="play_5" inlet="start"/>
+      </net>
+      <net>
+         <source obj="keybnote1__________" outlet="gate"/>
+         <dest obj="play_6" inlet="start"/>
+      </net>
+      <net>
+         <source obj="keybnote1___________" outlet="gate"/>
+         <dest obj="play_7" inlet="start"/>
+      </net>
+      <net>
+         <source obj="keybnote1____________" outlet="gate"/>
+         <dest obj="play_8" inlet="start"/>
+      </net>
+      <net>
+         <source obj="keybnote1_____________" outlet="gate"/>
+         <dest obj="play_9" inlet="start"/>
+      </net>
+      <net>
+         <source obj="play_9" outlet="out"/>
+         <dest obj="vca_1_____2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="play_8" outlet="out"/>
+         <dest obj="vca_1____2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="play_7" outlet="out"/>
+         <dest obj="vca_1___2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="play_6" outlet="out"/>
+         <dest obj="vca_1__2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="play_5" outlet="out"/>
+         <dest obj="vca_1_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="play_4" outlet="out"/>
+         <dest obj="vca_12" inlet="a"/>
+      </net>
+      <net>
+         <source obj="vca_1______" outlet="o"/>
+         <dest obj="mix_1" inlet="in7"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+      <MidiChannel>1</MidiChannel>
+      <NPresets>2</NPresets>
+      <NPresetEntries>4</NPresetEntries>
+      <NModulationSources>8</NModulationSources>
+      <NModulationTargetsPerSource>8</NModulationTargetsPerSource>
+      <Author>Albert</Author>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>-8</x>
+      <y>-8</y>
+      <width>1936</width>
+      <height>1176</height>
+   </windowPos>
+</patch-1.0>

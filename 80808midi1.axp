@@ -32,6 +32,22 @@
       <params/>
       <attribs/>
    </obj>
+   <obj type="mix/mix 7" uuid="1ddcf110bc38d78eddbc6d343aa8bf8a0953af76" name="mix_1" x="504" y="182">
+      <params>
+         <frac32.u.map name="gain1" value="64.0"/>
+         <frac32.u.map name="gain2" value="64.0"/>
+         <frac32.u.map name="gain3" value="29.5"/>
+         <frac32.u.map name="gain4" value="32.5"/>
+         <frac32.u.map name="gain5" value="29.5"/>
+         <frac32.u.map name="gain6" value="31.0"/>
+         <frac32.u.map name="gain7" value="31.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="dac_1______" x="630" y="182">
+      <params/>
+      <attribs/>
+   </obj>
    <obj type="midi/in/keyb note" uuid="ac0cd98e6c0373b7be73d25900342a62ebcf5f" name="keybnote1__" x="40" y="260">
       <params/>
       <attribs>
@@ -109,22 +125,6 @@
       </attribs>
    </obj>
    <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1______" x="340" y="660">
-      <params/>
-      <attribs/>
-   </obj>
-   <obj type="mix/mix 7" uuid="1ddcf110bc38d78eddbc6d343aa8bf8a0953af76" name="mix_1" x="420" y="680">
-      <params>
-         <frac32.u.map name="gain1" value="64.0"/>
-         <frac32.u.map name="gain2" value="64.0"/>
-         <frac32.u.map name="gain3" value="29.5"/>
-         <frac32.u.map name="gain4" value="32.5"/>
-         <frac32.u.map name="gain5" value="29.5"/>
-         <frac32.u.map name="gain6" value="31.0"/>
-         <frac32.u.map name="gain7" value="31.0"/>
-      </params>
-      <attribs/>
-   </obj>
-   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="dac_1______" x="560" y="680">
       <params/>
       <attribs/>
    </obj>
@@ -254,7 +254,6 @@
       <NPresetEntries>32</NPresetEntries>
       <NModulationSources>8</NModulationSources>
       <NModulationTargetsPerSource>8</NModulationTargetsPerSource>
-      <Author></Author>
    </settings>
    <notes><![CDATA[]]></notes>
    <windowPos>
