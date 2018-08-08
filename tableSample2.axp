@@ -1,0 +1,223 @@
+<patch-1.0 appVersion="1.0.12">
+   <obj type="midi/in/cc i" uuid="614eb76edef2b43632fa1fcda25aab54f821daf6" name="cc_1" x="210" y="14">
+      <params/>
+      <attribs>
+         <spinner attributeName="cc" value="0"/>
+         <spinner attributeName="default" value="0"/>
+      </attribs>
+   </obj>
+   <obj type="midi/in/pgm" uuid="6165409901fee4a0781b41bac3513f51c2120d67" name="pgm_1" x="406" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/+" uuid="b94a9b8e9adcb7d18868c0ee808a9b211b65578d" name="+_1" x="490" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="table/alloc 16b sdram" uuid="6d8eb0fd68f404cb5d14e7d4c8c146c8ccf09da1" name="sample" x="14" y="28">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="262144"/>
+         <text attributeName="init">
+            <sText><![CDATA[]]></sText>
+         </text>
+      </attribs>
+   </obj>
+   <obj type="string/indexed" uuid="a28740deef67c39ffc65bd0f341a47c9b196f46" name="indexed_1" x="602" y="28">
+      <params/>
+      <attribs>
+         <table attributeName="prefix" table="/samples/file"/>
+         <table attributeName="suffix" table=".raw"/>
+      </attribs>
+   </obj>
+   <obj type="logic/change" uuid="96e39ae624c3f3c952cec4a95e1986ee0104f718" name="change_1" x="784" y="28">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="table/load" uuid="600cc22c6734d23a82620da1a14e78782a7e168e" name="load_1" x="868" y="28">
+      <params/>
+      <attribs>
+         <objref attributeName="table" obj="sample"/>
+      </attribs>
+   </obj>
+   <obj type="math/div 16" uuid="b7449b5e15795458214cc8546684d409434535a8" name="div_1" x="322" y="98">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="tb/midi/utils/midiled" uuid="952fc352-41c6-45db-aa95-55d5d3a5546e" name="midiled_1" x="126" y="168">
+      <params/>
+      <attribs>
+         <combo attributeName="input" selection="omni"/>
+      </attribs>
+   </obj>
+   <patcher type="patch/patcher" uuid="068061c9-52fd-4e85-a0b7-47abe25337ef" name="voice" x="224" y="224">
+      <params/>
+      <attribs>
+         <combo attributeName="poly" selection="8"/>
+         <combo attributeName="midichannel" selection="1"/>
+         <combo attributeName="mididevice" selection="omni"/>
+         <combo attributeName="midiport" selection="omni"/>
+      </attribs>
+      <subpatch appVersion="1.0.12">
+         <obj type="midi/in/keyb mod" uuid="abcd509d15e7d13d5381203fd2b4d0ac6fe57bb3" name="keyb_1" x="140" y="140">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="table/play pitch" uuid="5632a54926261833bbb9fff049e71322c360e57e" name="play_1" x="490" y="154">
+            <params>
+               <frac32.s.map name="pitch" value="0.0"/>
+            </params>
+            <attribs>
+               <objref attributeName="table" obj="../sample"/>
+            </attribs>
+         </obj>
+         <obj type="math/+" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_1" x="322" y="168">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="gain/vca" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1" x="658" y="196">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="outlet_1" x="742" y="238">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="const/i" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_2" x="252" y="252">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="64"/>
+            </attribs>
+         </obj>
+         <obj type="const/i" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_1" x="266" y="322">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="65536"/>
+            </attribs>
+         </obj>
+         <obj type="math/*" uuid="13882852b58661ad012ffbe246470b5df4b6c5d1" name="*_1" x="378" y="336">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_1" x="518" y="392">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="const/i" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_3" x="280" y="406">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="262144"/>
+            </attribs>
+         </obj>
+         <obj type="math/min" uuid="e3d20abc508a5b2245686febc1caf036edc7f501" name="min_2" x="420" y="420">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="vca_1" outlet="o"/>
+               <dest obj="outlet_1" inlet="outlet"/>
+            </net>
+            <net>
+               <source obj="play_1" outlet="wave"/>
+               <dest obj="vca_1" inlet="a"/>
+            </net>
+            <net>
+               <source obj="i_1" outlet="out"/>
+               <dest obj="*_1" inlet="b"/>
+            </net>
+            <net>
+               <source obj="keyb_1" outlet="note"/>
+               <dest obj="+_1" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="i_2" outlet="out"/>
+               <dest obj="+_1" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="+_1" outlet="out"/>
+               <dest obj="*_1" inlet="a"/>
+            </net>
+            <net>
+               <source obj="keyb_1" outlet="gate"/>
+               <dest obj="play_1" inlet="start"/>
+            </net>
+            <net>
+               <source obj="*_1" outlet="result"/>
+               <dest obj="min_2" inlet="in1"/>
+            </net>
+            <net>
+               <source obj="i_3" outlet="out"/>
+               <dest obj="min_2" inlet="in2"/>
+            </net>
+            <net>
+               <source obj="min_2" outlet="out"/>
+               <dest obj="play_1" inlet="pos"/>
+               <dest obj="dial_1" inlet="in"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>polyphonic</subpatchmode>
+            <MidiChannel>1</MidiChannel>
+            <HasMidiChannelSelector>true</HasMidiChannelSelector>
+            <NPresets>8</NPresets>
+            <NPresetEntries>32</NPresetEntries>
+            <NModulationSources>8</NModulationSources>
+            <NModulationTargetsPerSource>8</NModulationTargetsPerSource>
+         </settings>
+         <notes><![CDATA[]]></notes>
+         <windowPos>
+            <x>732</x>
+            <y>134</y>
+            <width>1250</width>
+            <height>756</height>
+         </windowPos>
+      </subpatch>
+   </patcher>
+   <obj type="audio/out stereo" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="560" y="266">
+      <params/>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="indexed_1" outlet="out"/>
+         <dest obj="load_1" inlet="filename"/>
+      </net>
+      <net>
+         <source obj="voice" outlet="outlet_1"/>
+         <dest obj="out_1" inlet="right"/>
+         <dest obj="out_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="change_1" outlet="trig"/>
+         <dest obj="load_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="+_1" outlet="out"/>
+         <dest obj="indexed_1" inlet="index"/>
+         <dest obj="change_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="pgm_1" outlet="o"/>
+         <dest obj="+_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="cc_1" outlet="midiCC"/>
+         <dest obj="div_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="div_1" outlet="out"/>
+         <dest obj="+_1" inlet="in2"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>-8</x>
+      <y>-8</y>
+      <width>1936</width>
+      <height>1176</height>
+   </windowPos>
+</patch-1.0>
